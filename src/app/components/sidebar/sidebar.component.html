@@ -1,0 +1,72 @@
+<div class="flex flex-col px-3 min-w-[380px]">
+
+    <div class="h5 font-semibold text-center text-black mb-8">Hourly Sales</div>
+    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="max-w-[200px] mx-auto">
+        <style>
+            .axis {
+                stroke-width: .2;
+            }
+
+            .scale {
+                stroke-width: .2;
+            }
+
+            .shape {
+                fill-opacity: .3;
+            }
+
+            .shape:hover {
+                fill-opacity: .6;
+            }
+        </style>
+        <g transform="translate(50.0000,50.0000)">
+            <g>
+                <circle class="scale" fill="none" r="41.66666666666667">
+
+                </circle>
+                <circle class="scale" fill="none" r="27.77777777777778"></circle>
+                <circle class="scale" fill="none" r="13.88888888888889"></circle>
+            </g>
+            <g>
+                <polyline class="axis" points="0.0000,0.0000 0.0000,-41.6667"></polyline>
+                <polyline class="axis" points="0.0000,0.0000 36.0844,20.8333"></polyline>
+                <polyline class="axis" points="0.0000,0.0000 -36.0844,20.8333"></polyline>
+            </g>
+            <g>
+                <path class="shape" d="M0.0000,-29.1667L36.0844,20.8333L-32.4760,18.7500z"></path>
+                <path class="shape" d="M0.0000,-41.6667L21.6506,12.5000L-28.8675,16.6667z"></path>
+                <path class="shape" d="M0.0000,-33.3333L25.2591,14.5833L-21.6506,12.5000z"></path>
+            </g>
+            <g><text class="caption" text-anchor="middle" font-size="5" font-family="sans-serif" x="0.0000" y="-47.5000"
+                    dy="1.5">Battery Capacity</text><text class="caption" text-anchor="middle" font-size="5"
+                    font-family="sans-serif" x="41.1362" y="23.7500" dy="1.5">Design</text><text class="caption"
+                    text-anchor="middle" font-size="5" font-family="sans-serif" x="-41.1362" y="23.7500"
+                    dy="1.5">Usefulness</text></g>
+        </g>
+    </svg>
+
+    <div class="h5 font-semibold text-center text-black my-8">Sales by Station</div>
+    
+    <div class="salrs-info flex flex-col w-[60%] mx-auto mb-5 gap-2">
+        <div class="info flex justify-between ">
+            <img class="w-8" src="assets/images/gas-station-svgrepo-com.svg" alt="">
+            <div class="name text-black text-sm font-bold mr-5">Station Name</div>
+            <div class="number text-black text-base">25456</div>
+        </div>
+        <div class="progress w-full h-1 rounded-full bg-orange-300 relative">
+            <div class="rate absolute left-0 top-0 w-10 h-full bg-primary rounded-full"></div>
+        </div>
+    </div>
+    <div class="salrs-info flex flex-col w-[60%] mx-auto mb-5 gap-2">
+        <div class="info flex justify-between ">
+            <img class="w-8" src="assets/images/gas-station-svgrepo-com.svg" alt="">
+            <div class="name text-black text-sm font-bold mr-5">Station Name</div>
+            <div class="number text-black text-base">25456</div>
+        </div>
+        <div class="progress w-full h-1 rounded-full bg-orange-300 relative">
+            <div class="rate absolute left-0 top-0 w-10 h-full bg-primary rounded-full"></div>
+        </div>
+    </div>
+
+
+</div>
