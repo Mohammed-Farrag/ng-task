@@ -1,33 +1,42 @@
-<div class="flex w-full justify-around items-center gap-3 p-6">
-    <div class="monitor_stations flex items-end ">
-        <span class="mx-2 w-2 h-2 rounded-full bg-primary "></span>
-        <img class="me-2 w-6" src="assets/images/gas-station-svgrepo-com.svg" alt="">
-        <p class="text-2xl  mx-1"> 2/3</p>
-        <p class="text-sm w-2 leading-4"> Monitor Stations</p>
-    </div>
-    <div class="monitor_stations flex items-end ">
-        <span class="mx-2 w-2 h-2 rounded-full bg-primary "></span>
-        <img class="me-2 w-6" src="assets/images/gas-station-svgrepo-com.svg" alt="">
-        <p class="text-2xl  mx-1"> 2/3</p>
-        <p class="text-sm w-2 leading-4"> Monitor Stations</p>
-    </div>
-    <div class="days_tabs flex bg-secondry rounded-full items-center h-full  mx-3">
-        <div class="today w-fit text-center px-6 py-1 cursor-pointer rounded-full bg-primary text-white" >To day</div>
-        <div class="yester w-fit text-center px-6 py-1 cursor-pointer rounded-full">Yester day</div>
-        <div class="last w-fit text-center px-6 py-1 cursor-pointer rounded-full">Last day</div>
+<div class="flex w-full flex-col sm:flex-row justify-around items-center gap-5 sm:gap-3 p-6">
+ 
+
+        <div class="monitor_stations flex items-end w-full justify-center ">
+            <span class="mx-2 w-2 h-2 rounded-full bg-primary "></span>
+            <img class="me-2 w-6" src="assets/images/gas-station-svgrepo-com.svg" alt="">
+            <p class="text-2xl -mb-2  mx-1"> 2/3</p>
+            <p class="text-sm w-2 -mb-1 leading-4"> Monitor Stations</p>
+        </div>
+        <div class="monitor_stations flex items-end w-full justify-center ">
+            <span class="mx-2 w-2 h-2 rounded-full bg-primary "></span>
+            <img class="me-2 w-6" src="assets/images/gas-station-svgrepo-com.svg" alt="">
+            <p class="text-2xl -mb-2  mx-1"> 2/3</p>
+            <p class="text-sm w-2 -mb-1 leading-4"> Monitor Stations</p>
+        </div>
+
+
+
+    <div class="days_tabs flex shrink-0 bg-secondry rounded-full items-center h-full  sm:mx-3">
+        <div class="today w-fit text-center px-2 sm:px-6 py-1 cursor-pointer rounded-full bg-primary text-white">To day
+        </div>
+        <div class="yester w-fit text-center px-2 sm:px-6 py-1 cursor-pointer rounded-full">Yester day</div>
+        <div class="last w-fit text-center px-2 sm:px-6 py-1 cursor-pointer rounded-full">Last day</div>
     </div>
     <div class="strt_date flex">
         <span class="w-0 h-0 
         border-t-[10px] border-t-transparent
         border-l-[20px] border-l-primary
         border-b-[10px] border-b-transparent"></span>
-        <input class="ps-1 border-b-2 border-black"  placeholder="Start" type="datetime" />
+        <input class="ps-1 outline-none focus:outline-none border-b-2 border-black" placeholder="Start" type="text" />
+        <i class="fa-regular fa-calendar-days"></i>
     </div>
     <div class="strt_date flex">
         <span class="w-0 h-0 
         border-t-[10px] border-t-transparent
         border-l-[20px] border-l-primary
         border-b-[10px] border-b-transparent"></span>
-        <input class="ps-1 border-b-2 border-black"  placeholder="Start" type="datetime" />
+        <input class="ps-1 outline-none focus:outline-none border-b-2 border-black" placeholder="Start"
+            type="datetime" />
+        <i class="fa-regular fa-calendar-days"></i>
     </div>
 </div>

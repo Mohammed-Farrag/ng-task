@@ -9,6 +9,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RatingListComponent } from './components/rating-list/rating-list.component';
 import { GraphViewComponent } from './components/graph-view/graph-view.component';
 import { ListViewComponent } from './components/list-view/list-view.component';
+import { SingleListViewComponent } from './components/list-view/single-list-view/single-list-view.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,13 @@ import { ListViewComponent } from './components/list-view/list-view.component';
     SidebarComponent,
     RatingListComponent,
     GraphViewComponent,
-    ListViewComponent
+    ListViewComponent,
+    SingleListViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgChartsModule 
+    NgChartsModule ,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,26 +1,43 @@
-<div class="main flex ">
-  <app-menu></app-menu>
+<div class="main flex  pl-16">
+  <div class="fixed left-0 top-0 ">
+    <app-menu></app-menu>
+  </div>
+
+
   <div class="flex w-full main_content flex-col">
+
     <app-navbar></app-navbar>
-    <div class="flex justify-around bg-secondry px-5 py-5">
+
+    <div class="flex  flex-col sm:flex-row justify-around bg-secondry px-5 py-5">
+
       <div class="main-info w-full flex flex-col">
+        
         <app-rating-list></app-rating-list>
 
-        <div class="tabs flex flex-row-reverse rounded-full items-center bg-white max-w-[200px] ml-auto my-5 float-right">
+        <div class="tabs flex flex-row-reverse rounded-full items-center bg-white max-w-[250px] ml-auto my-5 float-right">
 
-          <a class="w-fit text-center px-6 py-1 cursor-pointer rounded-full"
+          <a class="w-fit text-center flex gap-2 items-baseline px-6 py-1 cursor-pointer rounded-full"
             routerLinkActive="active"
-            routerLink="/graph">GRAP</a>
-          <a class="w-fit text-center px-6 py-1 cursor-pointer rounded-full" 
+            routerLink="/graph">
+            <i class="fa-solid fa-chart-simple"></i>
+
+            <span>GRAP</span>
+          </a>
+          <a class="w-fit text-center flex gap-2 items-baseline px-6 py-1 cursor-pointer rounded-full" 
             routerLinkActive="active"
-            routerLink="/list">LIST</a>
+            routerLink="/list">
+            <i class="fa-solid fa-table-list"></i>
+            <span>LIST</span>
+          </a>
 
         </div>
 
         <router-outlet></router-outlet>
       
       </div>
-      <app-sidebar></app-sidebar>
+      <div class="side">
+        <app-sidebar></app-sidebar>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,15 @@
+.titles {
+    .active {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            border-radius: 10px;
+            left: 0;
+            background-color: #ff7f5c;
+        }
+    }
+}

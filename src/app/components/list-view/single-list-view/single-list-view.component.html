@@ -1,0 +1,67 @@
+<div class="flex bg-white py-4 px-5 rounded-md flex-col ">
+    <div class="heading flex justify-between pb-3 border-b-2 border-b-[#eee]">
+        <div class="left flex gap-3 items-end">
+            <span class="w-2 h-2 bg-primary rounded-full"></span>
+            <img src="assets/images/gas-station-svgrepo-com.svg" alt="">
+            <div class="text-lg"> Station dummy</div>
+        </div>
+        <div class="right cursor-pointer relative" >
+            <i class="fa-solid fa-ellipsis" (click)="menu.hidden = !menu.hidden"></i>
+
+            <div #menu 
+            class="absolute z-30 bg-white right-2 py-2 px-3 rounded-md w-80 sm:w-96 flex flex-col shadow-lg" 
+            [ngClass]="{'hidden': !menu.hidden}">
+                <div class="heading flex justify-between border-b-2 border-b-gray-300 pb-2 ">
+                    View Properties
+                </div>
+                <div class="items flex gap-3 mt-2 justify-between items-center">
+                    <div class="left flex flex-col gap-2">
+
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                      
+                    </div>
+                    <div class="right flex flex-col gap-2">
+                        
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-white border-2 border-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-white border-2 border-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-5 h-5 rounded-sm bg-white border-2 border-primary"></span>
+                            <div class="text-sm">Total sales </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="desc flex flex-wrap gap-y-5 mt-5  ">
+        <div class="item flex grow-0 shrink-0 text-sm basis-[33%] px-2 justify-around" *ngFor="let item of items">
+            <div class="left font-bold">Total Sales</div>
+            <div class="right">26, 2511 <sup>2</sup></div>
+        </div>
+        
+       
+    </div>
+</div>

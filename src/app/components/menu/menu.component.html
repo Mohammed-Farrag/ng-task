@@ -1,4 +1,9 @@
-<div class="menu bg-primary h-[100vh] flex rounded-e-lg">
+<div class="menu bg-primary h-[100vh] flex rounded-e-lg relative ease transition-all"
+ [ngClass]="{'left-[-80px]': open}">
+    <p class="absolute sm:hidden ps-1 right-[-20px] w-[20px] top-4 cursor-pointer" 
+    (click)="open = !open">
+        <i class="fa-solid fa-bars text-3xl"></i>
+    </p>
     <ul class="h-full flex flex-col  justify-center items-center p-2 gap-3 ">
         <li class="grow"><a href="#"> <img  class="opacity-70 hover:opacity-100" src="assets/images/PMS.svg" /></a></li>
         <li class=""><a href="#"> <img  class="opacity-70 hover:opacity-100" src="assets/images/control-room.svg" /></a></li>

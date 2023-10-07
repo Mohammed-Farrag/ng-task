@@ -1,1 +1,5 @@
-<p>list-view works!</p>
+<div class="list flex flex-col gap-5 sm:m-5 max-h-[300px] overflow-scroll">
+    <div class="statio" *ngFor="let station of stations">
+        <app-single-list-view></app-single-list-view>
+    </div>
+</div>
